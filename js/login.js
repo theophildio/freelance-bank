@@ -8,7 +8,8 @@ document.getElementById('login-button').addEventListener('click', function() {
   if (userEmail == 'info@login.com' && userPassword == '12345678') {
     window.location.href = 'bank.html';
   } else {
-    console.log("Email and password doesn't match!");
+    document.getElementById('warning').innerText = "Email or password doesn't match!";
+    document.getElementById('warning').style.marginTop = '10px';
   }
   // clear user input fields
   inputEmail.value = '';
