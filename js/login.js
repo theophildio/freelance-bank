@@ -13,4 +13,4 @@ document.getElementById('login-button').addEventListener('click', function() {
   // clear user input fields
   inputEmail.value = '';
   inputPassword.value = '';
-})
+});

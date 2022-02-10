@@ -18,7 +18,7 @@
     <section class="grid grid-cols-3 gap-4">
       <div class="bg-cyan-300 p-5 rounded text-center">
         <h4 class="uppercase text-white text-1xl">deposit</h4>
-        <h3 class="text-3xl text-slate-700">$<span id="deposit-amount">00</span></h3>
+        <h3 class="text-3xl text-slate-700">$<span id="deposit-total">00</span></h3>
       </div>
       <div class="bg-red-300 p-5 rounded text-center">
         <h4 class="uppercase text-white text-1xl">withdraw</h4>
@@ -31,15 +31,17 @@
     </section>
     <!-- Deposit and Withdraw Forms -->
     <section class="grid grid-cols-2 gap-4 mt-8 w-1/2 mx-auto">
+      <!-- Deposit Form -->
       <div class="bg-indigo-300 p-5 rounded">
         <h3 class="capitalize mb-4 text-white">deposit here</h3>
-        <input id="user-email" type="number" placeholder="Deposit amount" class="w-full p-1 rounded">
-        <button id="login-button" class="mt-3 bg-cyan-300 text-white py-1 px-6 capitalize rounded">deposit</button>
+        <input id="deposit-input" type="text" placeholder="Deposit amount" class="w-full p-1 rounded">
+        <button id="deposit-button" class="mt-3 bg-cyan-300 text-white py-1 px-6 capitalize rounded">deposit</button>
       </div>
+      <!-- Withdraw Form -->
       <div class="bg-indigo-300 p-5 rounded">
         <h3 class="capitalize mb-4 text-white">withdraw here</h3>
-        <input id="user-email" type="number" placeholder="Withdraw amount" class="w-full p-1 rounded">
-        <button id="login-button" class="mt-3 bg-red-300 text-white py-1 px-6 capitalize rounded">withdraw</button>
+        <input id="withdraw-input" type="text" placeholder="Withdraw amount" class="w-full p-1 rounded">
+        <button id="withdraw-button" class="mt-3 bg-red-300 text-white py-1 px-6 capitalize rounded">withdraw</button>
       </div>
     </section>
   </main>
