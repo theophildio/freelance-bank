@@ -6,4 +6,6 @@ document.getElementById('deposit-button').addEventListener('click', function() {
   const convertCurrentDepositBalance = parseFloat(currentDepositBalance);
   const updateDepositBalance = convertCurrentDepositBalance + depositAmount;
   depositTotal.innerText = updateDepositBalance;
+  // clear deposit field
+  depositField.value = ''; 
 });
