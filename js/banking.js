@@ -18,4 +18,18 @@ document.getElementById('deposit-button').addEventListener('click', function() {
 });
 
 // Withdraw calculation
-
+document.getElementById('withdraw-button').addEventListener('click', function() {
+  const withdrawInput = document.getElementById('withdraw-input');
+  const withdrawAmount = parseFloat(withdrawInput.value);
+  const currentWithdrawAmount = document.getElementById('withdraw-amount');
+  const updateWithdrawAmount = parseFloat(currentWithdrawAmount.innerText);
+  const withdrawAmountTotal = updateWithdrawAmount + withdrawAmount;
+  currentWithdrawAmount.innerText = withdrawAmountTotal;
+  // Clear withdraw field
+  withdrawInput.value = '';
+  // Update main balance after withdraw
+  const mainBalance = document.getElementById('current-amount');
+  const currentMainBalance = parseFloat(mainBalance.innerText);
+  const updateMainBalance = currentMainBalance - withdrawAmount;
+  mainBalance.innerText = updateMainBalance;
+});
